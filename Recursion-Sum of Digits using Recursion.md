@@ -15,9 +15,23 @@ To write a Python program to calculate the **sum of all digits** in a number usi
 6. **Stop**
 
 ## 💻 PROGRAM:
+```
+def sum_digit(n):
+    if n <= 0:
+        return 0
+    else:
+        return n % 10 + sum_digit(n // 10)
 
-ADD CODE HERE
+num = int(input("Enter a number: "))
+result = sum_digit(num)
+print("Sum of digits:", result)
+```
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/454c0418-63e0-4f49-ac3a-ef19b4c7ba52)
+
 
 ## RESULT
+The program demonstrates the use of recursion to calculate the sum of the digits of a given number and prints the result accordingly.
+
+
